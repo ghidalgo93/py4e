@@ -14,5 +14,26 @@
 # If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85. 
 
 
+try:
+    score = float(input("Score (0.0-1.0): "))
+except:
+    print("Error, please enter numeric value")
+    exit()
+
+if (score > 0.0 and score < 1.0):
+    if (score >= 0.9):
+        print("A")
+    elif (score >= 0.8):
+        print("B")
+    elif (score >= 0.7):
+        print("C")
+    elif (score >= 0.6):
+        print("D")
+    else:
+        print("F")
+
+else:
+    print("Error, score must be between 0.0 and 1.0")
+    exit()
 
 
